@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="gd_go_home">回家</string>
+<string name="gd_search">搜索</string>
+<string name="gd_talk">談話</string>
+<string name="gd_compose">撰寫</string>
+<string name="gd_export">出口</string>
+<string name="gd_share">分享</string>
+<string name="gd_refresh">刷新</string>
+<string name="gd_take_photo">拍照</string>
+<string name="gd_pick_photo">挑照片</string>
+<string name="gd_locate">定位</string>
+<string name="gd_edit">編輯</string>
+<string name="gd_add">添加</string>
+<string name="gd_star">明星</string>
+<string name="gd_sort_by_size">按大小排序</string>
+<string name="gd_sort_alpha">按字母順序排序</string>
+<string name="gd_locate_myself">自我定位</string>
+<string name="gd_compass">指南針</string>
+<string name="gd_help">幫助</string>
+<string name="gd_info">信息</string>
+<string name="gd_settings">設置</string>
+<string name="gd_list">名單</string>
+<string name="gd_trashcan">刪除</string>
+<string name="gd_eye">看見</string>
+<string name="gd_all_friends">所有朋友</string>
+<string name="gd_group">小組</string>
+<string name="gd_gallery">畫廊</string>
+<string name="gd_slideshow">幻燈片</string>
+<string name="gd_mail">郵件</string>
+
+</resources>
