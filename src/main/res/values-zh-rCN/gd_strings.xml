@@ -28,5 +28,6 @@
 	<string name="gd_gallery">画廊</string>
 	<string name="gd_slideshow">幻灯片</string>
 	<string name="gd_mail">邮件</string>
+	<string name="gd_plugin">插件</string>
 
 </resources>

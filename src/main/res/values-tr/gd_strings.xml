@@ -46,5 +46,6 @@
 	<string name="gd_gallery">Galeri</string>
 	<string name="gd_slideshow">Slide gösterisi</string>
 	<string name="gd_mail">Posta</string>
+	<string name="gd_plugin">Plugin</string>
 
 </resources>
