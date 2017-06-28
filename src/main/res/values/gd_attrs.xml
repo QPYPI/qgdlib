@@ -134,8 +134,8 @@
 		<attr name="drawable" format="reference" />
 	</declare-styleable>
 
-	<declare-styleable name="SubtitleItem">
-		<attr name="subtitle" format="string" />
+	<declare-styleable name="NSubtitleItem">
+		<attr name="nsubtitle" format="string" />
 	</declare-styleable>
 
 	<declare-styleable name="SubtextItem">
@@ -145,6 +145,7 @@
 	<declare-styleable name="ThumbnailItem">
 		<attr name="thumbnail" format="reference" />
 		<attr name="thumbnailURL" format="string" />
+		<attr name="thumbnailRight" format="reference"/>
 	</declare-styleable>
 
 	<!-- SegmentedBar related attributes -->

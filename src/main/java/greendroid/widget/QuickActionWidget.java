@@ -196,6 +196,10 @@ public abstract class QuickActionWidget extends PopupWindow {
         }
     }
 
+    public void removeQuickAction(QuickAction action){
+        mQuickActions.remove(action);
+    }
+
     /**
      * Removes all {@link QuickAction} from this {@link QuickActionWidget}.
      */

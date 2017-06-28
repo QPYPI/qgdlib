@@ -70,9 +70,8 @@ public class SubtitleItem extends TextItem {
     @Override
     public void inflate(Resources r, XmlPullParser parser, AttributeSet attrs) throws XmlPullParserException, IOException {
         super.inflate(r, parser, attrs);
-
-        TypedArray a = r.obtainAttributes(attrs, R.styleable.SubtitleItem);
-        subtitle = a.getString(R.styleable.SubtitleItem_subtitle);
+        TypedArray a = r.obtainAttributes(attrs, R.styleable.NSubtitleItem);
+        subtitle = a.getString(R.styleable.NSubtitleItem_nsubtitle);
         a.recycle();
     }
 }
