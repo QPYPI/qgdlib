@@ -28,6 +28,7 @@ import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.cyrilmottier.android.greendroid.R;
 
@@ -61,6 +62,8 @@ public class ThumbnailItem extends SubtitleItem {
      */
     public String drawableURL;
 
+    public int drawableIdRight;
+
     /**
      * @hide
      */
@@ -75,7 +78,7 @@ public class ThumbnailItem extends SubtitleItem {
      * @param drawableId The resource identifier to the Drawable
      */
     public ThumbnailItem(String text, String subtitle, int drawableId) {
-        this(text, subtitle, drawableId, null);
+        this(text, subtitle, drawableId, null,0);
     }
 
     /**
@@ -88,10 +91,12 @@ public class ThumbnailItem extends SubtitleItem {
      *            given <em>drawableURL</em>
      * @param drawableURL The URL pointing to the image to load.
      */
-    public ThumbnailItem(String text, String subtitle, int drawableId, String drawableURL) {
+    public ThumbnailItem(String text, String subtitle, int drawableId, String drawableURL,int drawableRight) {
         super(text, subtitle);
         this.drawableId = drawableId;
         this.drawableURL = drawableURL;
+        this.drawableIdRight=drawableRight;
+
     }
 
     @Override
@@ -102,10 +107,10 @@ public class ThumbnailItem extends SubtitleItem {
     @Override
     public void inflate(Resources r, XmlPullParser parser, AttributeSet attrs) throws XmlPullParserException, IOException {
         super.inflate(r, parser, attrs);
-
         TypedArray a = r.obtainAttributes(attrs, R.styleable.ThumbnailItem);
         drawableId = a.getResourceId(R.styleable.ThumbnailItem_thumbnail, drawableId);
         drawableURL = a.getString(R.styleable.ThumbnailItem_thumbnailURL);
+        drawableIdRight=a.getResourceId(R.styleable.ThumbnailItem_thumbnailRight,drawableIdRight);
         a.recycle();
     }
 

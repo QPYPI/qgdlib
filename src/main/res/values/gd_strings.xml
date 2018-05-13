@@ -47,5 +47,6 @@
 	<string name="gd_gallery">Gallery</string>
 	<string name="gd_slideshow">Slideshow</string>
 	<string name="gd_mail">Mail</string>
+	<string name="gd_plugin">Plugin</string>
 
 </resources>

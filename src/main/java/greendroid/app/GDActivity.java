@@ -37,6 +37,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 
 /**
  * <p>
@@ -144,7 +145,6 @@ public class GDActivity extends Activity implements ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         if (mDefaultConstructorUsed) {
             // HACK cyril: This should have been done in the default
             // constructor. Unfortunately, the getApplication() method returns
@@ -301,6 +301,7 @@ public class GDActivity extends Activity implements ActionBarActivity {
         return getGDActionBar().addItem(actionBarItemType, itemId);
     }
 
+
     public FrameLayout getContentView() {
         ensureLayout();
         return mActionBarHost.getContentView();
@@ -358,6 +359,18 @@ public class GDActivity extends Activity implements ActionBarActivity {
 	    	mDrawerLayout.openDrawer(Gravity.LEFT);
     	}
     }
+
+    public void setDrewerColor(int color){
+        if (mActionBarType == Type.Drawer) {
+            mDrawerLayout=(DrawerLayout) findViewById(R.id.gd_drawer_layout);
+            LinearLayout mLineraLayout= (LinearLayout) mDrawerLayout.findViewById(R.id.gd_drawer_layout_left);
+            mLineraLayout.setBackgroundColor(getResources().getColor(color));
+        }
+    }
+
+    public void setActiontBarColor(int color){
+        getGDActionBar().setBackgroundColor(getResources().getColor(color));
+    }
     
 
     /**
@@ -402,6 +415,10 @@ public class GDActivity extends Activity implements ActionBarActivity {
         final FrameLayout contentView = getContentView();
         contentView.removeAllViews();
         contentView.addView(view);
+    }
+
+    public void setActionBarColor(int resColor){
+        getGDActionBar().setBackgroundColor(getResources().getColor(resColor));
     }
 
     public boolean onHandleActionBarItemClick(ActionBarItem item, int position) {
