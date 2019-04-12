@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         minSdkVersion 9
-        targetSdkVersion 9
+        targetSdkVersion 26
     }
 
     buildTypes {
@@ -18,6 +18,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:23.4.0'
-    compile project(':qpagerlib')
+    api 'com.android.support:support-v4:23.4.0'
+    api project(':qpagerlib')
 }
